@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billingmodule.BillGenViewController">
+   <children>
+      <Label layoutX="238.0" layoutY="14.0" text="Bill Generator">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="98.0" layoutX="406.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/scroll-gd3bd9494d_640.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="131.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/news-gb15bde2e7_640.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="68.0" prefHeight="21.0" prefWidth="113.0" text="Mobile Numbers">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="320.0" layoutY="65.0" mnemonicParsing="false" onAction="#dofetchmobile" prefHeight="27.0" prefWidth="120.0" text="Fetch Mobile No.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="txtmobile" layoutX="145.0" layoutY="66.0" onAction="#docombo" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="64.0" text="Papers">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpapers" layoutX="146.0" layoutY="109.0" prefHeight="25.0" prefWidth="423.0" />
+      <Label layoutX="14.0" layoutY="154.0" prefHeight="21.0" prefWidth="47.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtprice" layoutX="146.0" layoutY="152.0" />
+      <Label layoutX="326.0" layoutY="156.0" prefHeight="21.0" prefWidth="75.0" text="Total Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttotalprice" layoutX="419.0" layoutY="154.0" onAction="#dototalprice" />
+      <Label layoutX="14.0" layoutY="192.0" text="Last Billing Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtlastbillingdate" layoutX="145.0" layoutY="187.0" />
+      <Label layoutX="336.0" layoutY="191.0" prefHeight="17.0" prefWidth="75.0" text="Bill up to">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtbillupto" layoutX="412.0" layoutY="190.0" />
+      <Label layoutX="14.0" layoutY="233.0" prefHeight="21.0" prefWidth="100.0" text="Missing Days">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmissingdays" layoutX="146.0" layoutY="231.0" />
+      <Button layoutX="494.0" layoutY="66.0" mnemonicParsing="false" onAction="#dolastbilling" text="Last Billing " />
+      <Button layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#dobillandsave" text="Gen Bill and save" />
+      <TextField fx:id="txtgenbillandsave" layoutX="146.0" layoutY="282.0" />
+      <Label fx:id="txtresp" layoutX="24.0" layoutY="333.0" prefHeight="17.0" prefWidth="54.0" text="Response" />
+   </children>
+</AnchorPane>

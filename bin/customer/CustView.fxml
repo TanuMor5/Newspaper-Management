@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.CustViewController">
+   <children>
+      <Label layoutX="198.0" layoutY="14.0" prefHeight="31.0" prefWidth="193.0" text="Customer Manager">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="65.0" prefHeight="21.0" prefWidth="177.0" text="Customer Mobile Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="187.0" layoutY="63.0" />
+      <Button fx:id="txtfetch" layoutX="380.0" layoutY="63.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="25.0" prefWidth="60.0" text="Fetch">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ListView fx:id="txtpaperavailable" layoutX="18.0" layoutY="138.0" onMouseClicked="#dopaperavailable" prefHeight="200.0" prefWidth="193.0" />
+      <ListView fx:id="txtpaperprice" layoutX="220.0" layoutY="138.0" onMouseClicked="#dopaperprice" prefHeight="200.0" prefWidth="125.0" />
+      <Label layoutX="56.0" layoutY="120.0" prefHeight="19.0" prefWidth="97.0" text="Papers Available">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="120.0" text="Paper Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="txtselectedpaper" layoutX="449.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="496.0" layoutY="120.0" prefHeight="17.0" prefWidth="125.0" text="Selected Paper">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="txtselectedprice" layoutX="660.0" layoutY="138.0" prefHeight="200.0" prefWidth="125.0" />
+      <Label layoutX="704.0" layoutY="121.0" prefHeight="17.0" prefWidth="60.0" text="price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="543.0" layoutY="65.0" prefHeight="21.0" prefWidth="47.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="607.0" layoutY="63.0" />
+      <Label layoutX="14.0" layoutY="361.0" text="Area">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="363.0" text="Hawker">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txthawker" layoutX="347.0" layoutY="361.0" />
+      <Label layoutX="593.0" layoutY="363.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtemail" layoutX="637.0" layoutY="359.0" />
+      <Label layoutX="14.0" layoutY="401.0" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtaddress" layoutX="79.0" layoutY="399.0" prefHeight="25.0" prefWidth="334.0" />
+      <Label layoutX="459.0" layoutY="403.0" text="Date of Start">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtdos" layoutX="584.0" layoutY="399.0" />
+      <Button layoutX="105.0" layoutY="450.0" mnemonicParsing="false" onAction="#dosubscribe" prefHeight="25.0" prefWidth="97.0" text="Subscribe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="400.0" layoutY="450.0" mnemonicParsing="false" onAction="#doupdate" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="610.0" layoutY="450.0" mnemonicParsing="false" onAction="#dounsubscribe" text="Unsubscribe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="txtarea" editable="true" layoutX="78.0" layoutY="359.0" onAction="#doarea" prefWidth="150.0" />
+     
+      <Label fx:id="txtrespp" layoutX="607.0" layoutY="21.0" text="response" />
+   </children>
+</AnchorPane>

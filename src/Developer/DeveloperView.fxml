@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Developer.DeveloperViewController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhatsApp%20Image%202023-07-20%20at%2004.28.21.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtn" layoutX="181.0" layoutY="63.0" prefHeight="27.0" prefWidth="194.0" text="  TANU">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtid" layoutX="181.0" layoutY="104.0" prefHeight="27.0" prefWidth="256.0" text="Email-id:-tanumor5@gmail.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtc" layoutX="181.0" layoutY="143.0" prefHeight="26.0" prefWidth="413.0" text="College:- National Institute of technology,Kurukshetra">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtb" layoutX="181.0" layoutY="183.0" prefHeight="17.0" prefWidth="263.0" text="Branch:- Computer Engineering">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txti" layoutX="64.0" layoutY="293.0" prefHeight="26.0" prefWidth="185.0" text="Under the guidance of :-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="168.0" layoutX="395.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhatsApp%20Image%202023-07-20%20at%2004.26.15.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="331.0" prefHeight="25.0" prefWidth="279.0" text="Author of realJava:-  Rajesh K. Bansal ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="table.TableViewController">
+   <children>
+      <Button layoutX="248.0" layoutY="31.0" mnemonicParsing="false" onAction="#dofetch" text="Fetch">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="txttable" layoutX="2.0" layoutY="137.0" prefHeight="200.0" prefWidth="593.0" />
+   </children>
+</AnchorPane>
